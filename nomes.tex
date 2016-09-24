@@ -1,13 +1,13 @@
 %%------------------------------------------------------------------------------
 %%----------------Variaveis para o LaTeX no Relatório---------------------------
-\newcommand{\universidade}{Universidade de Bras\'ilia - Campus Gama}
-\newcommand{\hell}{Nome da Materia}		%nome do arquivo
+\newcommand{\universidade}{Universidade de Brasília - UnB\\Faculdade UnB Gama - FGA}
+\newcommand{\hell}{Requisitos de Software - 201308}		%nome do arquivo
 % \renewcommand{\autor}{\ziul}							%criador do pdf - só observado nos detalhes do pdf
-\newcommand{\assunto}{Experimento}			%Nome do experimento
-\newcommand{\ver}{Titulo~- \assunto}						%numeração do experimento
-\newcommand{\professor}{Professor}
-\newcommand{\curso}{ENGENHARIA DE SOFTWARE}
-\newcommand{\turma}{D}
+\newcommand{\assunto}{Fabrica de Massas}			%Nome do experimento
+\newcommand{\ver}{Relatório 1\\\assunto}						%numeração do experimento
+\newcommand{\professor}{Orientador: Elaine Venson}
+\newcommand{\curso}{Engenharia de Software}
+\newcommand{\turma}{Grupo 2}
 
 %%------------------------------------------------------------------------------
 %%------------------------Detalhes para serem revistos--------------------------
@@ -21,6 +21,14 @@
 \newcommand{\ziul}{{Luiz Fernando Gomes de Oliveira}}					%Sem link
 \newcommand{\luizmatricula}{10/46969}
 \newcommand{\eluiz}{ziuloliveira@gmail.com}
+
+\newcommand{\eduardo}{{Eduardo Quintino Gomes}}                   %Sem link
+\newcommand{\eduardomatricula}{14/0137068}
+\newcommand{\eeduardo}{eduardoqgomes@gmail.com}
+
+\newcommand{\daniel}{{Daniel Moura}}
+\newcommand{\miguelpimentel}{{Miguel Pimentel}}
+\newcommand{\miguelnery}{{Miguel Nery}}
 
 %----------------------Foto e bibliografia do(s) autor(es)----------------------
 %%------------------------------------------------------------------------------
@@ -40,13 +48,14 @@
 \makeatletter
 \@ifclassloaded{scrartcl}% Slide
 {
-	\newcommand{\names}{\luiz}
-	\newcommand{\namecapa}{\ziul \\ \ziul}
+            \newcommand{\names}{\eduardo}
+            \newcommand{\namecapa}{\daniel\\\eduardo\\\miguelnery\\\miguelpimentel}
+
 	%\newcommand{\allmatriculas}{\luizmatricula,\canelamatricula}
 }
 {
-	\newcommand{\names}{\luiz}
-	\newcommand{\allmatriculas}{\luizmatricula}
+	\newcommand{\names}{\daniel\\\eduardo\\\miguelnery\\\miguelpimentel}
+	\newcommand{\allmatriculas}{\eduardomatricula}
 
 }
 \makeatother

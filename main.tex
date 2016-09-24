@@ -1,14 +1,14 @@
-\documentclass[journal,compsoc]{IEEEtran}\newcommand{\journal}{true}
+%\documentclass[journal,compsoc]{IEEEtran}\newcommand{\journal}{true}
 % \documentclass[conference]{IEEEtran}\newcommand{\journal}{false}
 % \documentclass[12pt,openright,twoside,a4paper,english,french,spanish]{abntex2}
 % \documentclass[a4paper,14pt]{report}
 % \documentclass[a4paper]{coursepaper}
 % \documentclass[12pt,answers]{exam}
-% \documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,12pt]{article}
+
 % \documentclass[a4paper,11pt]{book}
 % \documentclass[paper=256mm:192mm,fontsize=20pt,pagesize,parskip=half-]{scrartcl} %deprected
 \input packages
-
 \input nomes
 \input setup
 
@@ -19,9 +19,9 @@
 \makeatother
 
 \onecolumn    %Conferir se pode ser feito em duas colunas
+%\maketitle
+\input capa       %exemplo de personalização de capa/titulo
 \imprimeabstract %Dependendo do modelo, tem que ficar antes ou depois de \maketitle
-\maketitle
-% \input capa       %exemplo de personalização de capa/titulo
 % \imprimeabstract %Dependendo do modelo, tem que ficar antes ou depois de \maketitle
 
 
@@ -45,16 +45,16 @@
 % \thispagestyle{empty}
 % \IEEEdisplaynotcompsoctitleabstractindextext
 % \IEEEpeerreviewmaketitle
-  
-%\onecolumn   %Para texto em uma coluna
+
+\onecolumn   %Para texto em uma coluna
 %\twocolumn   %Para texto em duas colunas
-\begin{multicols}{2} % Insira dentro das {}  aquantidade de colunas desejadas
+%\begin{multicols}{2} % Insira dentro das {}  aquantidade de colunas desejadas
 %\begin{alphasection}
   \input conteudo/conteudo
   \rowcolors{0}{white}{white}
 %\end{alphasection}
-\end{multicols}
-%\onecolumn
+%\end{multicols}
+\onecolumn
 %\printglossaries
 %\glsdescwidth
 
@@ -84,7 +84,7 @@
 
 
   \bibliographystyle{abnt-num}%{IEEEtran}%{abnt-num}%{ieeetr}%{abnt-alf}
-  \bibliography{bibliography}   % expects file "bibliography.bib" 
+  \bibliography{bibliography}   % expects file "bibliography.bib"
   \nocite{*}  % imprime TODAS as referencias
 
 \end{document}
