@@ -1,10 +1,22 @@
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 
 \section{Introdução}\label{sec}
-\tab O presente trabalho tem como finalidade apresentar o resultado da Engenharia de Requisitos da Fábrica de Massas do Chef Nery. O empreendimento trata-se de uma micro empresa que fabrica diferentes tipos de massas.\\
+\tab O presente trabalho tem como finalidade apresentar o resultado da Processo de Engenharia de Requisitos de Software para a Fábrica de Massas do Chef Nery. O empreendimento trata-se de uma micro empresa que fabrica diferentes tipos de massas.\\
 \tab O contexto relacionado a necessidade do projeto é principalmente relacionado a necessidade de um melhor gerenciamento de clientes visando então buscar uma melhor forma de gerenciar seus pedidos e divulgar seus produtos.\\
 \tab Para isso, é de fundamental importancia utilizar uma metodologia para o levantamento de requisitos e gerenciamento do processo em questão.\\
-\tab Com uma análise acerca do contexto foi utilizado uma abordagem ágil composto de atividades do Scaled Agile Framework (SAFe). Com isso, foi possível desenhar o Processo de Engenharia de Requisitos contendo um também um modelo do Processo que será implementado no Trabalho 2.
+\tab Com uma análise acerca do contexto foi utilizado uma abordagem ágil composto de atividades do Scaled Agile Framework (SAFe). Com isso, foi possível desenhar o Processo de Engenharia de Requisitos contendo um também um modelo do Processo que será implementado no Trabalho 2.\\
+
+{\large{1.1 Visão Geral do Relatório}}\\ \\
+\tab - Introdução: tem como finalidade apresentar um resumo deste documento;\\
+\tab - Contexto da Empresa (Chef Nery): fundamenta o contexto da empresa contendo;\\
+\tab - Justificativa da Abordagem;\\
+\tab - Processo de Engenharia de Requisitos;\\
+\tab - Elicitação de Requisitos;\\
+\tab - Tópicos de Gerenciamento de Requisitos;\\
+\tab - Planejamento do Projeto;\\
+\tab - Ferramentas de Gestão de Requisitos;\\
+\tab - Considerações Finais;\\
+\tab - Referências;\\
 
 
 \section{Contexto da Empresa (Chef Nery)} % (fold)
@@ -251,10 +263,68 @@
 
 	\tab Consiste em todas as histórias de usuário que devem ser desenvolvidas durante uma sprint. Vale ressaltar que estas histórias são oriundas do Backlog do Time. \\
 }
+
+{
+
+	\large{Atividades do Processo \\}
+
+	\tab As atividades  estão dispostas a seguir de acordo com o quadro apresentado abaixo. Não obstante, cada atividade se encontra no subtópico referente ao seu nível de abstração. \\
+	\tab No quadro abaixo, o identificador foi criado para identificar a atividade de acordo com o seu nível de abstração. Desta forma, os identificadores estão representados da seguinte maneira: \\
+
+	\begin{itemize}
+		\item Atividades que começarem com as iniciais PO, referem-se ao nível de abstração Portfólio e o número da atividade neste nível. Exemplo: PO01 (Atividade 1 do nível de abstração Portfólio);\\
+		\item Atividades que começarem com as iniciais PR, referem-se ao nível de abstração Programa e o número da atividade neste nível. Exemplo: PR01(Atividade 1 do nível de abstração Programa);\\
+		\item Atividades que começarem com as iniciais T, referem-se ao nível de abstração Time e o número da atividade neste nível. Exemplo: T03(Atividade 3 do nível de abstração Time); \\
+	\end{itemize}
+
+	\tab Além disso, para atividades que não são necessárias entradas ou possuem não apresentam nenhuma saída será identificado pela sigla N/A (Não se aplica).\\
+
+	\onecolumn
+		\begin{usecase}
+    		\addtitle{Caso de Uso 1}{Exemplo de caso de uso}
+
+    		\addfield{Nome:}{\lipsum[1]}
+    		\addfield{Identificador:}{\lipsum[1]}
+    		\addfield{Descrição:}{Manolo}
+    		\addfield{Entrada:}{Manolo}
+    		\addfield{Saída:}{Manolo}
+    		\addfield{Responsável:}{Manolo}
+
+    		\addfield{Pré-condições:}{Aplicativo instalado}
+		\end{usecase}
+	\onecolumn
+
+}
+
+
+
+
 \section{Elicitação de Requisitos}
 \label{sec:nova_sess_o}
 
-\section{Tópicos de Gerenciamento de Requisitos}
+\tab Uma Elicitação de requisitos tem por característica achar o que realmente o usuário precisa para uma futura implementação de um software, é um processo que define o que o software deve ter como funcionalidade. Elicitar também pode ser descrito como descobrir ou obter informação sobre algo. O sucesso de um sistema de informação depende da qualidade da definição dos requisitos [10]. A isso se deve a grande importância de fazer um bom levantamento de requisitos.\\
+\tab Diversos projetos de software possuem a característica de terem falhado por problemas de Elicitação de Requisitos [8] [9]. Pode ser entendido que muitas vezes, os requisitos são mal interpretados ou incompletos. Com uma elicitação mal feita estariam comprometidos tanto a documentação quanto a especificação dos requisitos, provocando a inviabilidade de todo processo de Engenharia de Requisitos.\\
+\tab O processo de Engenharia de requisitos é a primeira etapa dentro de todo o processo de Engenharia de Requisitos [11]. Nela, a principal preocupação é em como levantar os reais requisitos do sistema. Para isso, existem diversas maneiras de levantar requisitos. \\
+
+{\large{5.1. Técnicas de Elicitação de Requisitos}}\\ \\
+\tab Foram estabelecidos critérios para a seleção das técnicas de elicitação de requisitos usadas. Estes foram:\\ \\
+\tab - Disponibilidade da Equipe;\\
+\tab - Disponibilidade do Cliente;\\
+\tab - Compatibilidade das Técnicas com a abordagem.\\ \\
+\tab A partir desses critérios serão/foram utilizadas as seguintes técnicas:\\
+
+{\large{5.1.1. Observação}}\\ \\
+\tab Essa técnica tem por característica possibilitar um contato pessoal estreito do pesquisador com o fenômeno pesquisado [12], no caso do presente projeto, um dos integrantes tem ligação parentesca com o cliente, isso facilita muito tanto a comunicação quanto o entendimento do trabalho para todo o grupo.\\
+
+{\large{5.1.2. Entrevista}\\ \\
+\tab Essa é uma técnica que tem como base o engenheiro ou analista discutir o sistema com diferentes usuários, a partir disso elabora um entendimento dos requisitos [12]. No caso foi feita uma entrevista aberta, em que houve uma conversa para determinar o que o cliente necessita a partir de seus problemas.\\
+
+{\large{5.1.3. Protótipo}}\\ \\
+\tab É um sistema sem funcionalidades inteligentes. O protótipo cria uma interface para o cliente validar o software que será implementado.\\
+
+{\large{5.1.4. Workshop}}\\ \\
+\tab É uma técnica tem um objetivo pré determinado onde cada indivíduo tem direito a fala e são discutidos os requisitos de acordo com esse objetivo. Em um Workshop há um indivíduo que é responsável por conduzir a reunião e gerar discussões entre os envolvidos.\\
+
 \label{sec:nova_sess_o}
 
 \section{Planejamento do Projeto}
