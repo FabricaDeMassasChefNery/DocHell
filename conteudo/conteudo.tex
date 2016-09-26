@@ -282,48 +282,151 @@
 
 	\onecolumn
 		\begin{usecase}
-    		\addtitle{Organização das atividades}{Processo}
+    		\addtitle{Processo}{ }
 
     		\addfield
-    			{Nome:}
-    			{
-    				Nome da atividade coeso com a atividade que deve ser realizada
-    			}
-
+    			{Nome:}{Nome da atividade coeso com a atividade que deve ser realizada}
 			\addfield
-    			{Identificador:}
-    			{
-    				Identifica a atividade conforme foi descrito anteriormente
-    			}
-
+    			{Identificador:}{Identifica a atividade conforme foi descrito anteriormente}
     		\addfield
-    			{Descrição:}
-    			{
-    				Breve descrição da atividade
-    			}
-    	
+    			{Descrição:}{Breve descrição da atividade}
     		\addfield
-    			{Entrada:}
-    			{
-    				Indica qual dos artefatos serão utilizados na realização desta atividade
-    			}
-
+    			{Entrada:}{Indica qual dos artefatos serão utilizados na realização desta atividade}
     		\addfield
-    			{Saída:}
-    			{
-    				Indica os artefatos que foram elaborados ao término desta atividade
-    			}
-
+    			{Saída:}{Indica os artefatos que foram elaborados ao término desta atividade}
 			\addfield
-    			{Responsável:}
-    			{
-    				Indica qual dois papéis é responsável pela execução  desta atividade
-    			}
+    			{Responsável:}{Indica qual dois papéis é responsável pela execução  desta atividade}
 
 		\end{usecase}
 	\onecolumn
 
 }
+
+{
+	\large{Atividades do Nível de Portfólio}
+
+	\onecolumn
+		\begin{usecase}
+    		\addtitle{Atividade:}{Compreender o contexto e os objetivos do cliente}
+
+    		\addfield
+    			{Nome:}{Compreender o contexto e os objetivos do cliente}
+			\addfield
+    			{Identificador:}{PO01}
+    		\addfield
+    			{Descrição:}{Compreender quais são as necessidades do cliente  a partir do contexto que ele está inserido}
+    		\addfield
+    			{Entrada:}{N/A}
+    		\addfield
+    			{Saída:}{Temas de Investimento}
+			\addfield
+    			{Responsável:}{Gerente de Portfólio}
+
+		\end{usecase}
+	\onecolumn
+
+	\onecolumn
+		\begin{usecase}
+    		\addtitle{Atividade:}{Definir Épicos}
+
+    		\addfield
+    			{Nome:}{Definir Épicos}
+			\addfield
+    			{Identificador:}{PO02}
+    		\addfield
+    			{Descrição:}{Definir os Épicos de acordo com as necessidade e contexto do cliente}
+    		\addfield
+    			{Entrada:}{Temas de Investimento}
+    		\addfield
+    			{Saída:}{Épicos}
+			\addfield
+    			{Responsável:}{Gerente de Portfólio}
+
+		\end{usecase}
+	\onecolumn
+
+	\onecolumn
+		\begin{usecase}
+    		\addtitle{Atividade:}{Definir Enables para os Épicos}
+
+    		\addfield
+    			{Nome:}{Definir Enables para os Épicos}
+			\addfield
+    			{Identificador:}{PO03}
+    		\addfield
+    			{Descrição:}{Definir quais serão os enables para os épicos previamente definidos}
+    		\addfield
+    			{Entrada:}{Épicos}
+    		\addfield
+    			{Saída:}{Enables de Épicos}
+			\addfield
+    			{Responsável:}{Gerente de Portfólio e Arquiteto do Sistema}
+
+		\end{usecase}
+	\onecolumn
+
+	\onecolumn
+		\begin{usecase}
+    		\addtitle{Atividade:}{Priorizar Épicos }
+
+    		\addfield
+    			{Nome:}{Priorizar Épicos}
+			\addfield
+    			{Identificador:}{PO04}
+    		\addfield
+    			{Descrição:}{Definir quais épicos devem possuir maior prioridade sobre os outros}
+    		\addfield
+    			{Entrada:}{Enables de Épicos e Épicos}
+    		\addfield
+    			{Saída:}{Backlog de Épicos}
+			\addfield
+    			{Responsável:}{Gerente de Portfólio }
+
+		\end{usecase}
+	\onecolumn
+
+	\onecolumn
+		\begin{usecase}
+    		\addtitle{Atividade:}{Validar Épicos}
+
+    		\addfield
+    			{Nome:}{Validar Épicos}
+			\addfield
+    			{Identificador:}{PO05}
+    		\addfield
+    			{Descrição:}{Validar junto ao cliente se os Épicos atendem suas necessidade}
+    		\addfield
+    			{Entrada:}{Backlog de Épicos}
+    		\addfield
+    			{Saída:}{N/A}
+			\addfield
+    			{Responsável:}{Product Owner e  Gerente de Produto}
+
+		\end{usecase}
+	\onecolumn
+
+
+}
+
+	\onecolumn
+		\begin{usecase}
+    		\addtitle{Atividade}{Elaborar Visão}
+
+    		\addfield
+    			{Nome:}{Elaborar Visão}
+			\addfield
+    			{Identificador:}{PR01}
+    		\addfield
+    			{Descrição:}{Desenvolver o artefato de visão}
+    		\addfield
+    			{Entrada:}{Backlog de Épicos e Temas de Investimento}
+    		\addfield
+    			{Saída:}{Visão}
+			\addfield
+    			{Responsável:}{Arquiteto do Sistema e Gerente do Produto}
+
+		\end{usecase}
+	\onecolumn
 
 
 
